@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -30,7 +30,31 @@
 </head>
 
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    
+    <!-- Logo -->
+    <div class="w-[263px] mx-auto pt-52">
+        <img src="./assets/Logo-full.png" alt="">
+    </div>
+
+    <!-- Form -->
+    <div class="pt-8">
+        <div class="card bg-base-100 w-full max-w-sm mx-auto rounded-3xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="label text-neutral text-sm font-medium">Mobile Number</label>
+                    <input maxlength="11" minlength="11" type="text"
+                        class="input rounded-full bg-base-200 border-none py-6" placeholder="Enter your number" />
+
+                    <label class="label text-neutral text-sm font-medium mt-3">4 Digit Pin</label>
+                    <input type="password" maxlength="4" class="input rounded-full bg-base-200 border-none py-6"
+                        placeholder="Enter 4 Digit Pin" />
+
+                    <button class="btn btn-primary mt-4 py-6 rounded-full text-base text-white">Login</button>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/login.js"></script>
 </body>
 
 </html>
