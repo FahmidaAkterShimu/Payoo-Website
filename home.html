@@ -29,9 +29,9 @@
 
 </head>
 
-<body class="min-h-screen max-w-md mx-auto text-[#080808]">
+<body class="min-h-screen bg-base-200 max-w-md mx-auto text-[#080808]">
     <!-- Header -->
-    <header class="border-b-2 border-gray-200">
+    <header class="bg-white border-b-2 border-gray-200">
         <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
             <!-- left -->
             <div class="flex gap-2 justify-center">
@@ -51,39 +51,76 @@
         </section>
     </header>
 
+    <!-- Welcome to Payoo -->
+    <section class="bg-white rounded-b-3xl mb-4">
+        <div class="w-11/12 mx-auto pt-8 pb-6 rounded-b-3xl">
+            <h2 class="text-2xl font-bold mb-3">Welcome to Pay<span class="text-[#7460FF]">oo</span></h2>
+            <p class="opacity-50 mb-6">Enjoy easy and convenient financial services with us. Cashout charge is low and
+            </p>
 
-    <section class="w-11/12 mx-auto pt-8 pb-6">
-        <h2 class="text-2xl font-bold mb-3">Welcome to Pay<span class="text-[#7460FF]">oo</span></h2>
-        <p class="opacity-50 mb-6">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+            <div class="grid grid-cols-3 gap-4">
+                <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
+                    <img src="./assets/opt-1.png" alt="">
+                    <p class="text-sm font-normal opacity-70">Add Money</p>
+                </button>
+                <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
+                    <img src="./assets/opt-2.png" alt="">
+                    <p class="text-sm font-normal opacity-70">Cashout</p>
+                </button>
+                <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
+                    <img src="./assets/opt-3.png" alt="">
+                    <p class="text-sm font-normal opacity-70">Send Money</p>
+                </button>
+                <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
+                    <img src="./assets/opt-4.png" alt="">
+                    <p class="text-sm font-normal opacity-70">Get Bonus</p>
+                </button>
+                <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
+                    <img src="./assets/opt-5.png" alt="">
+                    <p class="text-sm font-normal opacity-70">Pay Bill</p>
+                </button>
+                <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
+                    <img src="./assets/opt-6.png" alt="">
+                    <p class="text-sm font-normal opacity-70">Transactions</p>
+                </button>
 
-        <div class="grid grid-cols-3 gap-4">
-            <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
-                <img src="./assets/opt-1.png" alt="">
-                <p class="text-sm font-normal opacity-70">Add Money</p>
-            </button>
-            <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
-                <img src="./assets/opt-2.png" alt="">
-                <p class="text-sm font-normal opacity-70">Cashout</p>
-            </button>
-            <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
-                <img src="./assets/opt-3.png" alt="">
-                <p class="text-sm font-normal opacity-70">Send Money</p>
-            </button>
-            <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
-                <img src="./assets/opt-4.png" alt="">
-                <p class="text-sm font-normal opacity-70">Get Bonus</p>
-            </button>
-            <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
-                <img src="./assets/opt-5.png" alt="">
-                <p class="text-sm font-normal opacity-70">Pay Bill</p>
-            </button>
-            <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
-                <img src="./assets/opt-6.png" alt="">
-                <p class="text-sm font-normal opacity-70">Transactions</p>
-            </button>
+            </div>
         </div>
     </section>
 
+
+    <section id="cashout" class="w-11/12 mx-auto">
+        <!-- Cashout heading -->
+        <h2 class="text-lg font-semibold opacity-90 mb-4">Cashout</h2>
+
+        <!-- Form -->
+        <div class="card bg-base-100 w-full mx-auto rounded-3xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="label text-neutral text-sm font-medium">Agent Number</label>
+                    <input id="cashout-number" maxlength="11" minlength="11" type="text"
+                        class="input rounded-full bg-base-200 border-none py-6 w-full"
+                        placeholder="Enter 11 digit number" />
+
+                    <label class="label text-neutral text-sm font-medium">Amount</label>
+                    <input id="cashout-amount" type="number"
+                        class="input rounded-full bg-base-200 border-none py-6 w-full"
+                        placeholder="Enter amount to withdraw" />
+
+                    <label class="label text-neutral text-sm font-medium mt-3">Pin Number</label>
+                    <input id="cashout-pin" type="text" maxlength="4"
+                        class="input rounded-full bg-base-200 border-none py-6 w-full"
+                        placeholder="Enter 4 digit pin number" />
+
+                    <button id="cashout-btn"
+                        class="btn btn-primary mt-4 py-6 rounded-full text-base text-white">Withdraw Money</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./script/cashout.js"></script>
 
 </body>
 
