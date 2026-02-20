@@ -88,9 +88,49 @@
         </div>
     </section>
 
+    <!-- Add money Section -->
+    <section id="add-money" class="w-11/12 mx-auto">
+        <!-- Add-Money heading -->
+        <h2 class="text-lg font-semibold opacity-90 mb-4">Add Money</h2>
+
+        <!-- Form -->
+        <div class="card bg-base-100 w-full mx-auto rounded-3xl">
+            <div class="card-body">
+                <fieldset class="fieldset space-y-2">
+
+                    <label class="label text-neutral text-sm font-medium opacity-70">Select A Bank</label>
+                    <select id="add-money-bank" class="select w-full bg-base-200 border-none rounded-full">
+                        <option disabled selected>Select bank</option>
+                        <option value="DBBL">DBBL</option>
+                        <option value="Prime">Prime</option>
+                        <option value="Shonali">Shonali</option>
+                    </select>
+
+                    <label class="label text-neutral text-sm font-medium opacity-70">Bank Account Number</label>
+                    <input id="add-money-number" maxlength="11" minlength="11" type="text"
+                        class="input rounded-full bg-base-200 border-none py-6 w-full"
+                        placeholder="Enter 11 digit account number" />
+
+                    <label class="label text-neutral text-sm font-medium opacity-70">Amount to Add</label>
+                    <input id="add-money-amount" type="number"
+                        class="input rounded-full bg-base-200 border-none py-6 w-full"
+                        placeholder="Add Amount to withdraw" />
+
+                    <label class="label text-neutral text-sm font-medium opacity-70">Pin Number</label>
+                    <input id="add-money-pin" type="password" maxlength="4"
+                        class="input rounded-full bg-base-200 border-none py-6 w-full"
+                        placeholder="Enter 4 digit pin number" />
+
+                    <button id="add-money-btn"
+                        class="btn btn-primary mt-2 py-6 rounded-full text-base text-white">Add Money</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Cashout section -->
-    <section id="cashout" class="w-11/12 mx-auto">
+    <section id="cashout" class="w-11/12 mx-auto hidden">
         <!-- Cashout heading -->
         <h2 class="text-lg font-semibold opacity-90 mb-4">Cash Out</h2>
 
