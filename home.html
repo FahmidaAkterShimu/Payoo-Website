@@ -89,37 +89,39 @@
     </section>
 
 
+    <!-- Cashout section -->
     <section id="cashout" class="w-11/12 mx-auto">
         <!-- Cashout heading -->
-        <h2 class="text-lg font-semibold opacity-90 mb-4">Cashout</h2>
+        <h2 class="text-lg font-semibold opacity-90 mb-4">Cash Out</h2>
 
         <!-- Form -->
         <div class="card bg-base-100 w-full mx-auto rounded-3xl">
             <div class="card-body">
-                <fieldset class="fieldset">
-                    <label class="label text-neutral text-sm font-medium">Agent Number</label>
+                <fieldset class="fieldset space-y-2">
+                    <label class="label text-neutral text-sm font-medium opacity-70">Agent Number</label>
                     <input id="cashout-number" maxlength="11" minlength="11" type="text"
                         class="input rounded-full bg-base-200 border-none py-6 w-full"
                         placeholder="Enter 11 digit number" />
 
-                    <label class="label text-neutral text-sm font-medium">Amount</label>
+                    <label class="label text-neutral text-sm font-medium opacity-70">Amount</label>
                     <input id="cashout-amount" type="number"
                         class="input rounded-full bg-base-200 border-none py-6 w-full"
                         placeholder="Enter amount to withdraw" />
 
-                    <label class="label text-neutral text-sm font-medium mt-3">Pin Number</label>
+                    <label class="label text-neutral text-sm font-medium opacity-70">Pin Number</label>
                     <input id="cashout-pin" type="password" maxlength="4"
                         class="input rounded-full bg-base-200 border-none py-6 w-full"
                         placeholder="Enter 4 digit pin number" />
 
                     <button id="cashout-btn"
-                        class="btn btn-primary mt-4 py-6 rounded-full text-base text-white">Withdraw Money</button>
+                        class="btn btn-primary py-6 mt-2 rounded-full text-base text-white">Withdraw Money</button>
                 </fieldset>
             </div>
         </div>
     </section>
 
 
+    <script src="./script/machine.js"></script>
     <script src="./script/cashout.js"></script>
 
 </body>
