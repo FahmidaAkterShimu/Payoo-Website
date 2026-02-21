@@ -59,11 +59,11 @@
             </p>
 
             <div class="grid grid-cols-3 gap-4">
-                <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
+                <button onclick="showOnly('add-money')" class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
                     <img src="./assets/opt-1.png" alt="">
                     <p class="text-sm font-normal opacity-70">Add Money</p>
                 </button>
-                <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
+                <button onclick="showOnly('cashout')" class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
                     <img src="./assets/opt-2.png" alt="">
                     <p class="text-sm font-normal opacity-70">Cashout</p>
                 </button>
@@ -121,8 +121,8 @@
                         class="input rounded-full bg-base-200 border-none py-6 w-full"
                         placeholder="Enter 4 digit pin number" />
 
-                    <button id="add-money-btn"
-                        class="btn btn-primary mt-2 py-6 rounded-full text-base text-white">Add Money</button>
+                    <button id="add-money-btn" class="btn btn-primary mt-2 py-6 rounded-full text-base text-white">Add
+                        Money</button>
                 </fieldset>
             </div>
         </div>
@@ -130,7 +130,7 @@
 
 
     <!-- Cashout section -->
-    <section id="cashout" class="w-11/12 mx-auto hidden">
+    <section id="cashout" class="w-11/12 mx-auto">
         <!-- Cashout heading -->
         <h2 class="text-lg font-semibold opacity-90 mb-4">Cash Out</h2>
 

@@ -20,4 +20,19 @@ function setBalance(value) {
     balanceElement.innerText = value;
 }
 
+// machine id -> hide all -> show id
+function showOnly(id) {
+    const addMoney = document.getElementById("add-money");
+    const cashOut = document.getElementById("cashout");
+    // console.log(`Add Money- ${addMoney} , Cash Out- ${cashOut}`);
+
+    // Hide all form
+    addMoney.classList.add("hidden");
+    cashOut.classList.add("hidden");
+
+    // remove the hidden from which id will call
+    const selected = document.getElementById(id);
+    selected.classList.remove("hidden");
+}
+
 
