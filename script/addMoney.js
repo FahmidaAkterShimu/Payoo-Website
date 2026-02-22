@@ -42,6 +42,7 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
         // 4. append newDiv in history container
         history.append(newHistory);
     }
+
     else {
         alert("Invalid Pin");
         return;

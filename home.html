@@ -79,7 +79,7 @@
                     <img src="./assets/opt-5.png" alt="">
                     <p class="text-sm font-normal opacity-70">Pay Bill</p>
                 </button>
-                <button class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
+                <button onclick="showOnly('history')" class="btn bg-white flex-col h-full px-6 py-5 rounded-xl">
                     <img src="./assets/opt-6.png" alt="">
                     <p class="text-sm font-normal opacity-70">Transactions</p>
                 </button>
@@ -102,8 +102,8 @@
                     <select id="add-money-bank" class="select w-full bg-base-200 border-none rounded-full">
                         <option disabled selected>Select bank</option>
                         <option value="DBBL">DBBL</option>
-                        <option value="Prime">Prime Bank</option>
-                        <option value="Shonali">Shonali Bank</option>
+                        <option value="Prime Bank">Prime Bank</option>
+                        <option value="Shonali Bank">Shonali Bank</option>
                     </select>
 
                     <label class="label text-neutral text-sm font-medium opacity-70">Bank Account Number</label>
@@ -160,14 +160,14 @@
         </div>
     </section>
 
-    
+
     <!-- History -->
-     <section id="history" class="w-11/12 mx-auto">
+    <section id="history" class="w-11/12 mx-auto hidden">
         <h2 class="text-lg font-semibold opacity-90 mb-4">Transaction History</h2>
         <div class="space-y-3" id="history-container">
-        
+
         </div>
-     </section>
+    </section>
 
 
     <script src="./script/machine.js"></script>

@@ -24,11 +24,13 @@ function setBalance(value) {
 function showOnly(id) {
     const addMoney = document.getElementById("add-money");
     const cashOut = document.getElementById("cashout");
+    const history = document.getElementById("history");
     // console.log(`Add Money- ${addMoney} , Cash Out- ${cashOut}`);
 
     // Hide all form
     addMoney.classList.add("hidden");
     cashOut.classList.add("hidden");
+    history.classList.add("hidden");
 
     // remove the hidden from which id will call
     const selected = document.getElementById(id);
